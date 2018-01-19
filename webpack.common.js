@@ -3,6 +3,7 @@ const utils = require('./utils');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 module.exports = {
     entry: config.entry,
@@ -47,6 +48,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new FriendlyErrorsWebpackPlugin(),
         new ExtractTextPlugin({
             filename: utils.isProduction ? 'css/[name].[hash].css' : 'css/[name].css',
         }),

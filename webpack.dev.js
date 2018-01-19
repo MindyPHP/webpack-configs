@@ -9,6 +9,7 @@ module.exports = merge(common, {
         compress: true,
         hot: true,
         historyApiFallback: true,
-        port: 8080
+        port: 8080,
+        quiet: true,
     }
 });
