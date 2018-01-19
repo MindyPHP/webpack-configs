@@ -1,4 +1,6 @@
 .DS_Store
+!.gitkeep
 /node_modules
 /build
 /templates
+/assets
