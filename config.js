@@ -4,9 +4,11 @@ module.exports = {
     entry: {
         app: [
             './assets/js/app.js',
-            './assets/css/app.scss',
+            './assets/css/app.scss'
         ],
     },
-    outputPrefix: '/build/',
-    outputPath: path.resolve(__dirname, 'build')
+    outputPrefix: '/themes/svetobox/',
+    outputPath: path.resolve(__dirname, 'build'),
+    devServerPort: 8080,
+    cdn: false,
 };
